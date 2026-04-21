@@ -1,0 +1,109 @@
+/* --- BOTÓN WHATSAPP --- */
+.btn-whatsapp {
+  background-color: #25D366; /* Verde WhatsApp */
+  color: #fff !important;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  box-shadow: 0 3px 6px rgba(37, 211, 102, 0.3);
+}
+.btn-whatsapp i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.4);
+    background-color: #1ebe5d;
+    transition: all 0.3s ease;
+}
+
+
+/* --- CABECERAS --- */
+.price_head {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+}
+.price_head h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.price_head p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* --- COLORES ESPECÍFICOS DE CADA SERVICIO --- */
+.netflix h5 { color: #25D366; }
+.disney h5 { color: #1d4ed8; }
+.star h5 { color: #f97316; }
+.prime h5 { color: #3b82f6; }
+.hbo h5 { color: #9333ea; }
+.iptv h5 { color: #16a34a; }
+
+/* --- FONDO SUAVE EN CABECERAS POR SERVICIO --- */
+.netflix .price_head { background: rgba(37, 211, 102, 0.05); }
+.disney .price_head { background: rgba(29, 78, 216, 0.05); }
+.star .price_head { background: rgba(249, 115, 22, 0.05); }
+.prime .price_head { background: rgba(59, 130, 246, 0.05); }
+.hbo .price_head { background: rgba(147, 51, 234, 0.05); }
+.iptv .price_head { background: rgba(22, 163, 74, 0.05); }
+
+/* --- TARJETAS SERVICIOS --- */
+.price_table_inner {
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.price_table_inner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- IMÁGENES ADAPTABLES CON EFECTO --- */
+.price_table_inner img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+.price_table_inner:hover img {
+  transform: scale(1.05);
+}
+
+/* --- LISTA DE CARACTERÍSTICAS CON CHECK --- */
+.price_cont p {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+.price_cont p::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #25D366; /* Verde check */
+  font-weight: bold;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .price_table_inner {
+    margin-bottom: 20px;
+  }
+  .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+}
